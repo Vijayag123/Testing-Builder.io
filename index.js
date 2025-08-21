@@ -459,6 +459,33 @@ const server = http.createServer((req, res) => {
                 <a href="#features" class="btn-primary">Explore Features</a>
                 <a href="#about" class="btn-secondary">Learn More</a>
               </div>
+
+              <!-- Added button from diff -->
+              <button class="custom-button">Click me!</button>
+
+              <!-- Added two-column layout from diff -->
+              <div class="builder-section">
+                <div class="builder-columns">
+                  <div class="builder-column">
+                    <div class="image-container">
+                      <img src="https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a"
+                           alt="Builder.io content"
+                           class="builder-image"
+                           loading="lazy" />
+                      <div class="image-overlay">
+                        <p>Testing builder.io</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="builder-column">
+                    <div class="content-section">
+                      <section class="builder-inner-section">
+                        <!-- Content area -->
+                      </section>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>

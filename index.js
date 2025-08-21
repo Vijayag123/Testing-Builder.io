@@ -482,6 +482,19 @@ const server = http.createServer((req, res) => {
           }
 
           /* Responsive Design */
+          @media (max-width: 991px) {
+            .builder-columns {
+              flex-direction: column;
+              align-items: stretch;
+              gap: 0px;
+            }
+
+            .builder-column {
+              width: 100%;
+              margin-left: 0 !important;
+            }
+          }
+
           @media (max-width: 768px) {
             .header-content {
               flex-direction: column;
@@ -517,6 +530,16 @@ const server = http.createServer((req, res) => {
 
             .features-grid {
               grid-template-columns: 1fr;
+            }
+
+            .builder-section {
+              margin-top: 20px;
+            }
+
+            .custom-button {
+              width: 100%;
+              max-width: 300px;
+              margin: 20px auto;
             }
           }
 

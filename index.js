@@ -362,6 +362,117 @@ const server = http.createServer((req, res) => {
             background: #ff5252;
           }
 
+          /* Custom Button */
+          .custom-button {
+            all: unset;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            margin-top: 20px;
+            appearance: none;
+            background-color: black;
+            color: white;
+            border-radius: 4px;
+            text-align: center;
+            cursor: pointer;
+            padding: 15px 25px;
+            transition: all 0.3s ease;
+          }
+
+          .custom-button:hover {
+            background-color: #333;
+            transform: translateY(-2px);
+          }
+
+          /* Builder Section */
+          .builder-section {
+            margin-top: 40px;
+            width: 100%;
+          }
+
+          .builder-columns {
+            gap: 20px;
+            display: flex;
+          }
+
+          .builder-column {
+            display: flex;
+            flex-direction: column;
+            line-height: normal;
+            width: 50%;
+          }
+
+          .builder-column:first-child {
+            margin-left: 0px;
+          }
+
+          .builder-column:last-child {
+            margin-left: 20px;
+          }
+
+          .image-container {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            margin-top: 20px;
+            width: 100%;
+            min-height: 200px;
+            min-width: 20px;
+            overflow: hidden;
+            border-radius: 10px;
+          }
+
+          .builder-image {
+            position: absolute;
+            inset: 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+          }
+
+          .image-overlay {
+            position: relative;
+            height: auto;
+            margin-top: 20px;
+            padding: 20px 0 30px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 0 0 10px 10px;
+            z-index: 2;
+          }
+
+          .image-overlay p {
+            margin: 0;
+            color: #333;
+            text-align: center;
+          }
+
+          .content-section {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            min-height: 100px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+          }
+
+          .builder-inner-section {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            min-height: 100px;
+            padding: 20px;
+            width: 100%;
+            align-self: stretch;
+            flex-grow: 1;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 2px dashed rgba(255, 255, 255, 0.3);
+            border-radius: 8px;
+          }
+
           /* Footer */
           footer {
             background: #333;
